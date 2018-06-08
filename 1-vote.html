@@ -7,5 +7,14 @@
 <body>
 	<img src="sdxl.jpg">
 	<a href="1-vote.php">投票方法1</a>
+	<p><input type="button" name="" value="投票方法2" onclick="vote();"></p>
 </body>
+<script type="text/javascript">
+	function vote(){
+		// 创建img标签
+		var vote = document.createElement('img'); 
+		// 设置src属性，浏览器将会请求src对应的资源
+		vote.setAttribute('src', './1-vote.php');
+	}
+</script>
 </html>
